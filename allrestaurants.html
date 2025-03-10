@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="h-screen flex flex-col bg-gradient-to-br from-gray-800 to-gray-900 text-white"
+    >
+      <!-- Navbar -->
+      <nav
+        class="bg-gradient-to-r from-blue-700 to-indigo-800 px-6 py-4 flex items-center justify-between shadow-lg"
+      >
+        <div class="text-2xl font-bold flex items-center">AluTimater</div>
+        <div class="space-x-4">
+          <button
+            id="homePageButton"
+            class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md shadow-md transition"
+          >
+            <a href="index.html">Home Page</a>
+          </button>
+          <button
+            id="loginPageButton"
+            class="bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded-md shadow-md transition"
+          >
+            <a href="index.html">Login Page</a>
+          </button>
+          <button
+            class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md shadow-md transition"
+          >
+            <a href="allrestaurents.html">Restaurants</a>
+          </button>
+        </div>
+      </nav>
+
+      <div class="flex flex-grow">
+        <!-- Sidebar -->
+        <aside
+          class="w-1/5 bg-gray-800 bg-opacity-80 p-6 backdrop-blur-lg shadow-md"
+        >
+          <h2 class="text-xl font-semibold mb-4 uppercase tracking-widest">
+            Menu
+          </h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="block text-lg hover:text-indigo-400 transition"
+                >➤ Add Restaurants</a
+              >
+            </li>
+            <li>
+              <a
+                href="dishPage.html"
+                class="block text-lg hover:text-indigo-400 transition"
+                >➤ Add Dishes</a
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow p-6">
+          <h1 class="text-3xl font-bold mb-4">All Restaurants</h1>
+          <div id="restaurantContainer" class="space-y-4"></div>
+        </main>
+      </div>
+    </div>
+
+    <script src="allrestaurants.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-900">
+    <h1 class="absolute top-4 text-white">User: admin <br />Password: admin</h1>
+    <div
+      class="flex w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+    >
+      <!-- Left Section with Background Image -->
+      <div
+        class="w-1/2 bg-cover bg-center"
+        style="
+          background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsb2ZmaWNlMjFfcmVzdGF1cmFudF9tZXNtZXJpemluZ19sb2ZpX2Flc3RoZXRpY193YWxscGFwZV9jMWQ1NTI0OC04MDZkLTQ4MmQtOWU1Ni0wZWQ0OTk3YzYwZjcuanBn.jpg');
+        "
+      ></div>
+
+      <!-- Right Section: Sign-up Form -->
+      <div class="w-1/2 p-8 text-white">
+        <h2 class="text-2xl font-semibold mb-4">Sign up</h2>
+        <p class="text-sm text-gray-400 mb-6">
+          Welcome to the Anime studio bakery. Register as a member to
+          experience.
+        </p>
+
+        <form>
+          <label class="block text-sm mb-2">E-mail</label>
+          <input
+            id="user"
+            type="text"
+            class="w-full px-4 py-2 mb-4 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your username"
+          />
+
+          <label class="block text-sm mb-2">Password</label>
+          <input
+            id="password"
+            type="password"
+            class="w-full px-4 py-2 mb-4 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your password"
+          />
+
+          <div class="flex items-center mb-4"></div>
+
+          <button
+            type="button"
+            onclick="login()"
+            class="w-full py-2 bg-blue-600 hover:bg-blue-700 rounded text-white font-semibold"
+          >
+            Login in
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
